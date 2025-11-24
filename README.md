@@ -40,8 +40,28 @@ Estimación del impacto operativo de la automatización del cálculo del precio 
 
 # Conclusiones (insights)
 
+El modelo subestima el costo de los apartamentos en el 44% de los casos. Esto supondría un aumento en el número de avalúos presenciales, pero dado que reduce el tiempo que toma hacer cada avalúo en un 84%, a largo plazo generará un beneficio. 
 
+Aunque haya un potencial beneficio, las estimaciones tienen un margen de error considerable, por lo que se recomienda continuar con la experimentación antes de llevarlo a producción. 
+
+Se recomienda limitar el uso del modelo para apartamentos de menos de 3.000 millones de pesos, pues tiende a subestimar más estos apartamentos. 
+
+Se recomienda aumentar la muestra de apartamentos de estratos 2 y 3 ubicados hacia el sur de la ciudad, con el objetivo de disminuir el sesgo que presenta el modelo hacia dichos apartamentos. 
 
 # Instrucciones de ejecución
 
+Para ejecutar este proyecto, primero se deben instalar las dependencias utilizando el archivo requirements.txt:
+
+pip install -r requirements.txt
+
+Una vez instaladas, se podrá ejecutar el notebook taller.ipynb sin realizar configuraciones adicionales, ya que el dataset necesario está incluido en el repositorio.
+
 # Dependencias
+
+pandas
+matplotlib
+seaborn
+numpy
+sklearn
+lime
+shap
